@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:text="课程"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/courseFragment_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:text="VR/AR虚拟/增强现实"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:background="#F0F0F0"/>
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:text="国际IT认证"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:background="#F0F0F0"/>
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:text="前后端开发"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:background="#F0F0F0"/>
+    <LinearLayout
+        android:id="@+id/layout_4"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:text="IT运营支持"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:background="#F0F0F0"/>
+    <LinearLayout
+        android:id="@+id/layout_5"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:text="营销|会计|职业技能"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:src="@drawable/right"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="1px"
+        android:background="#F0F0F0"/>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

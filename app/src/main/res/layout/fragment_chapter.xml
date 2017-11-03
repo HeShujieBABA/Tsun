@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ExpandableListView
+            android:layout_marginBottom="50dp"
+            android:id="@+id/fragment_chapter_expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ExpandableListView>
+        <Button
+            android:textColor="#FFF"
+            android:layout_alignParentBottom="true"
+            android:text="立即报名"
+            android:background="#FF6A6A"
+            android:id="@+id/fragment_chapter_btnSign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+</LinearLayout>
