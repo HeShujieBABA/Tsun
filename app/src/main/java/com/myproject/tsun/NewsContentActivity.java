@@ -109,4 +109,5 @@ public class NewsContentActivity extends AppCompatActivity {
         }
         super.onDestroy();
     }
+
 }

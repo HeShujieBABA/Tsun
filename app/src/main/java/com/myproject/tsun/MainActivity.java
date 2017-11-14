@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     private List<Fragment> fragmentList;
     private ViewPager viewPager;
     private AlphaIndicator alphaIndicator;
@@ -29,16 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
+        Log.d(TAG,"onCreate execute");
         initView();
-        //初始化刷新
-          /**mainSwipeRefreshLayout.setColorSchemeResources(R.color.colorStatusBar);
-          mainSwipeRefreshLayout.setProgressViewEndTarget(true,250);
-          mainSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                refreshMain();
-            }
-        });**/
         //初始化底部的四个Fragment
         fragmentList = new ArrayList<>();
         fragmentList.add(new HomeFragment());
@@ -52,10 +46,6 @@ public class MainActivity extends AppCompatActivity {
     public void initView(){
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         alphaIndicator = (AlphaIndicator) findViewById(R.id.alphaIndicator);
-       // mainSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.mainSwipeRefreshLayout);
-    }
-    public void refreshMain(){
-     //   mainSwipeRefreshLayout.setRefreshing(false);
     }
     class MainAdapter extends FragmentPagerAdapter {
         public MainAdapter(FragmentManager fm) {
@@ -70,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             return fragmentList.size();
         }
     }
-
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){

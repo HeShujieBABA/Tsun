@@ -33,22 +33,32 @@
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="150dp">
+
             <RelativeLayout
+                android:id="@+id/loginLayout"
                 android:gravity="center"
-                android:layout_centerInParent="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/circleImageView"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:src="@drawable/me"/>
-                <TextView
-                    android:layout_marginTop="10dp"
+                <RelativeLayout
                     android:layout_below="@+id/circleImageView"
-                    android:text="点击登录"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tvUserNickName"
+                        android:layout_marginTop="8dp"
+                        android:text="点击登录"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
             </RelativeLayout>
 
         </RelativeLayout>
@@ -178,6 +188,7 @@
                 android:layout_height="1px"
                 android:background="#888"/>
             <LinearLayout
+                android:id="@+id/layout_1"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -210,6 +221,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_2"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -242,6 +254,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_3"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -274,6 +287,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_4"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -306,6 +320,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_5"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -338,6 +353,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_6"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -370,6 +386,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_7"
                 android:layout_marginTop="15dp"
                 android:background="#FFF"
                 android:layout_width="match_parent"
@@ -403,6 +420,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_8"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -435,6 +453,7 @@
                 android:layout_height="1px"
                 android:background="#F0F0F0"/>
             <LinearLayout
+                android:id="@+id/layout_9"
                 android:background="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"

@@ -1,6 +1,7 @@
 package com.myproject.tsun.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.myproject.tsun.NewsContentActivity;
 import com.myproject.tsun.R;
+import com.myproject.tsun.ServiceActivity;
 import com.myproject.tsun.db.FindItem;
 
 import java.util.List;
@@ -42,7 +45,34 @@ public class FindItemAdapter extends RecyclerView.Adapter<FindItemAdapter.ViewHo
             context = parent.getContext();
         }
         View view = LayoutInflater.from(context).inflate(R.layout.find_item_layout,parent,false);
-        FindItemAdapter.ViewHolder viewHolder = new FindItemAdapter.ViewHolder(view);
+        final FindItemAdapter.ViewHolder viewHolder = new FindItemAdapter.ViewHolder(view);
+        viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = viewHolder.getAdapterPosition();
+                switch (position){
+                    case 0:
+                        FindItem findItem_0 = findItemList.get(0);
+                        break;
+                    case 1:
+                        FindItem findItem_1 = findItemList.get(1);
+                        break;
+                    case 2:
+                        FindItem findItem_2 = findItemList.get(2);
+                        break;
+                    case 3:
+                        FindItem findItem_3 = findItemList.get(3);
+                        context.startActivity(new Intent(context, ServiceActivity.class));
+                        break;
+                    case 4:
+                        FindItem findItem_4 = findItemList.get(4);
+                        context.startActivity(new Intent(context, NewsContentActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
         return viewHolder;
     }
 
